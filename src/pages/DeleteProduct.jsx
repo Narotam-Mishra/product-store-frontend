@@ -16,7 +16,7 @@ const DeleteProduct = () => {
       .delete(`https://mern-product-store-apis-naru.onrender.com/api/v1/products/${id}`)
       .then(() => {
         setLoading(false);
-        enqueueSnackbar('Book deleted successfully!!', {variant: 'success'});
+        enqueueSnackbar('Product deleted successfully!!', {variant: 'success'});
         navigate("/");
       })
       .catch((err) => {

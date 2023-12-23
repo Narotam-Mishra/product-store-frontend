@@ -25,7 +25,7 @@ const AddProduct = () => {
       .post('https://mern-product-store-apis-naru.onrender.com/api/v1/products', data)
       .then(() => {
         setLoading(false);
-        enqueueSnackbar('Book added successfully!', {variant: 'success'});
+        enqueueSnackbar('Product added successfully!', {variant: 'success'});
         navigate('/');
       })
       .catch((err) => {
